@@ -8,18 +8,18 @@
     "48": "pomodoro-timer.png",
     "128": "pomodoro-timer.png"
   },
-  "action": {
-    "default_icon": {
-      "16": "pomodoro-timer.png",
-      "24": "pomodoro-timer.png",
-      "32": "pomodoro-timer.png"
-    },
-    "default_title": "Timer Extension Action Title",
-    "default_popup": "popup.html"
-  },
-  "options_page": "options.html",
-  "permissions": ["storage", "alarms", "notifications"],
-  "background": {
-    "service_worker": "background.js"
-  }
-}
+//   "action": {
+//     "default_icon": {
+//       "16": "pomodoro-timer.png",
+//       "24": "pomodoro-timer.png",
+//       "32": "pomodoro-timer.png"
+//     },
+//     "default_title": "Timer Extension Action Title",
+//     "default_popup": "popup.html"
+//   },
+//   "options_page": "options.html",
+//   "permissions": ["storage", "alarms", "notifications"],
+//   "background": {
+//     "service_worker": "background.js"
+//   }
+// }
