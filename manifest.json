@@ -7,5 +7,10 @@
     "16": "pomodoro-timer.png",
     "48": "pomodoro-timer.png",
     "128": "pomodoro-timer.png"
+  },
+  "action": {
+    "default_icon": "pomodoro-timer.png",
+    "default_title": "Pomodoro Timer",
+    "default_popup": "popup/popup.html"
   }
 }
