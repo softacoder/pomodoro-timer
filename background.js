@@ -3,11 +3,21 @@ chrome.alarms.create("pomodoroTimer", {
 });
 
 chrome.alarms.onAlarm.addListner((alarm) => {
-    if (alarm.name === "pomodoroTimer") {
-    }
-
-chrome.storage.local.get(["timer", "isRunning"], (res) => {
-    chrome.storage.local.set({"timer" in res ? res.isRunning : false,
+  if (alarm.name === "pomodoroTimer") {
+    chrome.storage.local.get(["timer, isRunning"], (res) => {
+      if (res.isRunning) {
+        let timer = res.timer + 1;
+        chrome.storage.local.set({
+          timer,
+        });
+      }
+    });
+  }
 });
 
+chrome.storage.local.get(["timer", "isRunning"], (res) => {
+  chrome.storage.local.set({
+    timer: "timer" in res ? res.timer : 0,
+    isRunning: "isRunning" in res ? res.isRunning : false,
+  });
 });
